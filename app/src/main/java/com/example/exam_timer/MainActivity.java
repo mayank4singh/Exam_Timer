@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
             public void onTick(long millisUntilFinished) {
                 duration.setText("Time "+String.valueOf(millisUntilFinished/1000));
             }
-
             @Override
             public void onFinish() {
                 mediaPlayer.start();
@@ -30,10 +29,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }.start();
-
-
-
-
-
     }
 }
